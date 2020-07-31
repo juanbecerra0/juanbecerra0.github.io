@@ -474,7 +474,7 @@
 					<!-- Engine -->
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/engine.PNG" alt="fractal">
+							<img src="images/portfolio/engine.PNG" alt="engine">
 							<a href="#modal-13" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -491,7 +491,7 @@
 					<div id="modal-13" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/engine.PNG" alt="fractal" />
+							<img src="images/portfolio/engine.PNG" alt="engine" />
 						</div>
 
 						<div class="description-box">
@@ -501,18 +501,11 @@
 								practices, and real-time rendering. This is by far my most ambitious project, and I don’t really foresee an 
 								ending point, but I nonetheless hope to periodically pour more into something I’m passionate about.
 							</p>
-							<p>Current features:</p>
-							<ul>
-								<li>Entry point with precompiled headers</li>
-								<li>Layered I/O handling</li>
-								<li>GUI support via GLEW/ImGui APIs</li>
-								<li>Barebones OpenGL rendering context</li>
-							</ul>
-							<p>Planned features:</p>
-							<ul>
-								<li>Implementing a math library</li>
-								<li>A more sophisticated rendering abstraction solution</li>
-							</ul>
+							<p>Currently, Hoowan boasts a 2D rendering submission API written in OpenGL, an entity-component system built using EnTT, 
+								an input-polling event system for user interaction, and a basic collision detection/correction system. While not 
+								completely ready for development, very basic 2D games can be built using Hoowan’s statically-linked library and 
+								editor application.
+							</p>
 						</div>
 
 						<div class="link-box">
@@ -523,6 +516,56 @@
 
 					</div>
 					<!-- /Engine -->
+
+					<!-- Dreamwoods -->
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/chasmwatch.PNG" alt="dreamwoods">
+							<a href="#modal-11" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Chasmwatch</h3>
+										<span class="folio-types">
+											3D Game Project - Unity, C#, ShaderLab
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div id="modal-11" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/chasmwatch.png" alt="dreamwoods" />
+						</div>
+
+						<div class="description-box">
+							<h4>Chasmwatch</h4>
+							<p>I’ve created and thrown away several Unreal, Unity, and GoDot projects in the name of education, but this time, 
+								I chose to start my first semi-serious game development project. Chasmwatch is a 3D Zelda-like game built in Unity. 
+								While the majority of the assets were purchased through the asset store or taken from royalty-free sites, nearly all 
+								of the code (C# and ShaderLab) was written by me. I really wanted to challenge myself to implement some mechanics from 
+								some of my favorite games, like Dark Souls, The Legend of Zelda, and Diablo.
+							</p>
+							<p>
+								Currently, Chasmwatch has several features implemented, including a standard 3rd-person RPG control scheme, 
+								a lock-on camera with collision correction, dodge functionality with invincibility frames, a dialogue system 
+								with easy JSON document authoring, basic village NPC agent behaviors, and a collision-based combat event system. 
+								I don’t foresee this becoming a retail project (unless I can somehow make this my fulltime job), but I hope to 
+								slowly add more and more features and eventually make a nice, presentable portfolio project out of this.
+								
+							</p>
+						</div>
+
+						<div class="link-box">
+							<a href="https://gitlab.com/becerrajuan007/chasmwatch" target="_blank">Project
+								Repository</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div>
+					<!-- /Dreamwoods -->
 					
 					<!-- Fractal -->
 					<div class="bgrid folio-item">
@@ -564,6 +607,55 @@
 					</div>
 					<!-- /Fractal -->
 
+					<!-- Terrain Engine -->
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/terrainEngine.PNG" alt="terrainEngine">
+							<a href="#modal-09" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Procedural Terrain Generator</h3>
+										<span class="folio-types">
+											Computer Graphics Research Project - Unity, C#, ShaderLab
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div id="modal-09" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/terrainEngine.PNG" alt="terrainEngine" />
+						</div>
+
+						<div class="description-box">
+							<h4>Procedural Terrain Generator</h4>
+							<p>This is my procedural terrain generator built using Unity. In this
+								project,
+								I researched and implemented several fractal-based procedural terrain generation techniques
+								for
+								my Advanced
+								Computer Graphics course at Boise State University. It features biome
+								partitioning, which
+								modifies geometry noise-space to match different biomes, blends different materials on
+								prefab geometry blocks, and
+								procedurally places
+								models based on the biome. I've finished the first version of this project, and I hope to 
+								add more features in the future.
+							</p>
+						</div>
+
+						<div class="link-box">
+							<a href="https://github.com/juanbecerra0/TerrainEngine" target="_blank">Project
+								Repository</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div>
+					<!-- /Terrain Engine -->
+
 					<!-- Chon -->
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
@@ -604,98 +696,6 @@
 
 					</div>
 					<!-- /Chon -->
-
-					<!-- Dreamwoods -->
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/dreamwoods.PNG" alt="dreamwoods">
-							<a href="#modal-11" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Dreamwoods</h3>
-										<span class="folio-types">
-											Game Project - Unity, C#, ShaderLab
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div id="modal-11" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/dreamwoods.PNG" alt="dreamwoods" />
-						</div>
-
-						<div class="description-box">
-							<h4>Dreamwoods</h4>
-							<p>After taking courses in computer graphics and game development, and after developing 
-								a terrain generator in Unity, I have decided to take my first serious stab at a 3D game 
-								project. I’ve been developing a small-scale, 3D Zelda-like called “Dreamwoods”. I’ve been 
-								following some more advanced scripting tutorials for Unity and currently have basic player 
-								mechanics, like combat, basic AI, and inventory programmed. I hope to slowly implement more 
-								features over time.
-							</p>
-						</div>
-
-						<div class="link-box">
-							<a href="https://gitlab.com/becerrajuan007/dreamwoods" target="_blank">Project
-								Repository</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-					<!-- /Dreamwoods -->
-					
-					<!-- Terrain Engine -->
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/terrainEngine.PNG" alt="terrainEngine">
-							<a href="#modal-09" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Terrain Engine</h3>
-										<span class="folio-types">
-											Computer Graphics Research Project - Unity, C#, ShaderLab
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div id="modal-09" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/terrainEngine.PNG" alt="terrainEngine" />
-						</div>
-
-						<div class="description-box">
-							<h4>Terrain Engine</h4>
-							<p>This is my procedural terrain generator built using Unity. In this
-								project,
-								I researched and implemented several fractal-based procedural terrain generation techniques
-								for
-								my Advanced
-								Computer Graphics course at Boise State University. It features biome
-								partitioning, which
-								modifies geometry noise-space to match different biomes, blends different materials on
-								prefab geometry blocks, and
-								procedurally places
-								models based on the biome. I've finished the first version of this project, and I hope to 
-								add more features in the future.
-							</p>
-						</div>
-
-						<div class="link-box">
-							<a href="https://github.com/juanbecerra0/TerrainEngine" target="_blank">Project
-								Repository</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-					<!-- /Terrain Engine -->
 
 					<!-- Bioinformatics BTree Implementation -->
 					<div class="bgrid folio-item">
