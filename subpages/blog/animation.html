@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Juan Becerra's Portfolio">
+    <meta name="keywords"
+        content="juan, becerra, hoowan, game, developer, programmer, computer, blog, animation, machine, learning, AI">
+    <meta name="keywords" content="Hazze, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juan Becerra's Blog - ML-Drive Animation Development</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../../css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="../../img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="main-menu mobile-menu">
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../about.html">About Me</a></li>
+                            <li><a href="../../resume.html">Resume</a></li>
+                            <li class="active"><a href="../../portfolio.html">Portfolio</a></li>
+                            <li><a href="../../blog.html">Blog</a></li>
+                            <li><a href="../../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="breadcrumb-option">
+                        <a href="../../index.html">Home</a>
+                        <a href="../../portfolio.html">Portfolio</a>
+                        <span>ML-Drive Animation Development</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="breadcrumb-text">
+                        <h3>ML-Drive Animation Development</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Blog Details Hero  Section Begin -->
+    <section class="blog-hero-section set-bg spad" data-setbg="../../img/blog/details/details-hero.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="bh-text">
+                        <span>Game Engineering</span>
+                        <h2>ML-Drive Animation Development</h2>
+                        <ul>
+                            <li>Juan Becerra</li>
+                            <li>May 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Hero Section End -->
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="bd-text">
+                        <div class="bd-title">
+                            <p>
+                                One of the most important components of 3D game development happens to also be one of the most
+                                overlooked by the layman: animation state development. This single aspect of development does
+                                not only play into the overall aesthetics of a game, but it also plays a heavy part in gameplay
+                                and information presentation. For example, a fighting game may allow the player to chain
+                                together inputs in order to perform combos, and a game’s system will need to smoothly transition
+                                between different key frames in order to let the player know that these attacks were correctly
+                                performed. In a more adventure-oriented genre, a player’s current running velocity, terrain, and
+                                stamina state may all play a roll on the final running pose at any given point. To say that
+                                handling these animation states would eventually get complex would be a massive understatement.
+                            </p>
+                            <p>
+                                This aspect of game design may initially seem trivial but imagine this scenario: you’re playing
+                                your favorite action-oriented adventure game. You’re running through a grass plain, but
+                                something seems off. No matter how you modify the speed of your character and no matter the size
+                                of the rocks that your character must assumedly maneuver, the running animation remains static.
+                                You press the ‘pickup’ input in order to reach out and pick up a flower, but instead your
+                                character reaches directly out in front of you and grasps at air, all while your character is
+                                moving without moving their legs. There is a distinct disconnect between the player’s
+                                inputs/desired actions and how the game affirms the performance of these actions.
+                            </p>
+                            <img src="../../img/blog/animation/1.png" alt="Skyrim Animation">
+                            <p style="font-style: italic;">
+                                A screenshot of The Elder Scrolls V: Skyrim, specifically from a game modification that seeks to
+                                add and improve animation transitions from the base game
+                                <a href="https://www.nexusmods.com/skyrim/mods/34960">[SOURCE]</a>
+                            </p>
+        
+                            <p>
+                                Simply put, animation state development is difficult. As the verbiage of a game grows, the
+                                amount of distinct animation states and transitions between them grows exponentially. In
+                                addition, there are tons of circumstances that each animation state may have to consider and
+                                consequently modify their poses. However, fairly recent advancements in game engine development
+                                may mean that these aspects may become easier to develop for. In this blog post, I’ll be
+                                introducing the concept of utilizing neural networks and machine learning in order to
+                                efficiently develop animation state locomotion for a variety of player scenarios.
+                            </p>
+        
+                            <h2 style="color:white;">A Primer</h2>
+                            <p>
+                                Game engines and development tools all handle animation state machines differently, but in
+                                general, they follow this workflow: import a rigged model and a large set of animations
+                                (typically done iteratively by artists using specialized modeling software), create a discrete
+                                set of animation states (such as idle, running, jumping, attacks, etc.), create transitions
+                                between these states (for example, idle or jumping can transition to jumping via input), and
+                                cleaning (ensure that the transitions between states is smoothly interpolated, account for
+                                compound states like being able to run from the waist down and attack from the waist up, and
+                                utilize physics constraints for stuff like the shock absorption after a jump or foot placement
+                                in idle and running). In addition, any given state can have its own independent state machine
+                                within it, so in a way, the overall state machine acts as a sort of hierarchy of pose
+                                information. Whenever a new state is introduced, these steps will often need to be redone for a
+                                large portion of existing states. For example, if a ‘pickup’ animation is introduced, you may
+                                need to specify that it can only be performed while idle or running, may be done in compound
+                                with the aforementioned states, and may utilize physics constraints to reach for the target
+                                object, which may deform the legs, back, and arms as well.
+                            </p>
+                            <img src="../../img/blog/animation/2.png" alt="Unity 1">
+                            <p style="font-style: italic;">
+                                An example of an animation state machine in Unity, a commercial game engine and development tool
+                                <a
+                                    href="https://forum.unity.com/threads/transitions-beetwen-states-in-a-finite-state-machine-animation-are-slow-not-immediate.510845/">[SOURCE]</a>
+                            </p>
+                            <p>
+                                Now I want to reaffirm why an easier, machine-learning-oriented approach may be necessary. As
+                                previously mentioned, as more verbs are introduced into the game prototype, the complexity of
+                                these animation states will grow exponentially. Say we wanted to add more verbs and special
+                                transitions, such as crawling, siding, run-jumping, and ledge-hanging. In this case, we’d end up
+                                with a state machine that’s quite a bit more involved:
+                            </p>
+                            <img src="../../img/blog/animation/3.png" alt="Unity 2">
+                            <p style="font-style: italic;">
+                                A screenshot taken from a Unity project on a Unity forum post.
+                                <a
+                                    href="https://answers.unity.com/questions/354357/how-complex-should-mecanim-state-machines-be.html">[SOURCE]</a>
+                            </p>
+                            <p>
+                                On the surface, this is already starting to become difficult to manage with several arrows
+                                pointing to many discrete states. This does not even display information regarding physics
+                                constraints, the circumstances for state transitions to occur, the interpolation between
+                                different states, and the delta time between state transitions. Now imagine adding a simple
+                                ‘pick-up’ state. Now you need to ask how can other states transition between it, if the action
+                                can be compounded with other states, if it can be interrupted by certain events (such as falling
+                                or taking damage), and how to seamlessly blend into this state. It’s doable, but it would surely
+                                take a lot of human authoring and trial and error in order to accomplish. For this reason, we
+                                have a motivation to try other solutions, such as machine learning.
+                            </p>
+        
+                            <h2 style="color:white;">Applying Machine Learning</h2>
+                            <p>
+                                So we’ve seen the general workflow of how discrete animation states are hand-authored. Now how
+                                does machine learning fit into all of this? For this, I will primarily be referencing from a GDC
+                                (Game Developer’s Conference) talk by Ubisoft’s Daniel Holden in which he explains, at a high
+                                level, how their engine handles animation authoring for game series like Watch Dogs and
+                                Assassin’s Creed. In addition, I will be referencing an article from Neurohive for high-level
+                                implementation details. Links to both can be found in the ‘References’ section.
+                            </p>
+                            <p>
+                                This first step of this system is to compartmentalize the flow of how animation is simulated. At
+                                a high level, player input and gameplay information is sent into a black-box animation system,
+                                which then outputs a final animation pose for any given frame in a game’s simulation.
+                            </p>
+                            <img src="../../img/blog/animation/4.png" alt="Black Box 1">
+                            <p style="font-style: italic;">
+                                High-level data flow for animation system, Ubisoft GDC presentation
+                                <a href="https://www.youtube.com/watch?v=o-QLSjSSyVk&t=12s">[SOURCE]</a>
+                            </p>
+                            <p>
+                                At a high level, the neural network animation system will work in three distinct components:
+                                separate data, specific desired variables, and generalize solution.
+                            </p>
+        
+                            <h2 style="color:white;">Data Seperation</h2>
+                            <p>
+                                In a typical animation state machine, states will contain a distinct animation or pose along
+                                with any necessary information for blending and physics constraints. However, for this approach,
+                                we want to separate this data out based on certain tags (such as male, idle, tired, etc.) rather
+                                than long descriptors (male_idle_tired vs. male_idle_energetic). Ideally, these tags would be
+                                the same among many states, except for unique poses, such as ones shown in cutscenes. These tags
+                                allow us to tie states to gameplay elements (such as velocity constraints and attack states). In
+                                the long run, this makes maintaining large state machines easier as it scales as we can simply
+                                describe desired states rather than trying to author large state machines.
+                            </p>
+                            <img src="../../img/blog/animation/5.png" alt="Black Box 2">
+                            <p style="font-style: italic;">
+                                Ubisoft GDC presentation, using input and tag parameters in order to find best matching poses in
+                                an animation database
+                                <a href="https://www.youtube.com/watch?v=o-QLSjSSyVk&t=12s">[SOURCE]</a>
+                            </p>
+        
+                            <h2 style="color:white;">Desired Variables</h2>
+                            <p>
+                                Once our animation system can be treated as a database with a tag system for querying final
+                                poses, we can start defining variables. For example, we may have a large pool of animations that
+                                match simple running locomotion. When inserted into a database, these running animations can be
+                                tagged based on different constraints, gameplay scenarios, and user input. At runtime,
+                                animations can be cycled through based on what constraints fit the best (such as player
+                                character information, current speed, the delta between current and desired running directions,
+                                materials under the player’s feet, and information regarding recent poses). The graphic below
+                                shows how this system can find the best animation given the current simulated constraints.
+                            </p>
+                            <img src="../../img/blog/animation/6.png" alt="For Honor Animation">
+                            <p style="font-style: italic;">
+                                Demonstration of For Honor’s animation matching system, Ubisoft GDC presentation. Red = desired
+                                direction, blue = current gameplay direction, green = possible poses that match parameters in
+                                database
+                                <a href="https://www.youtube.com/watch?v=o-QLSjSSyVk&t=12s">[SOURCE]</a>
+                            </p>
+        
+                            <h2 style="color:white;">Generalized Solution</h2>
+                            <p>
+                                Attempting to match multiple constraints to a constantly growing database of poses can be very
+                                costly, especially given that we’re working with a game that must maintain an acceptable
+                                framerate at runtime. Thankfully, the aforementioned setup is a great candidate for a
+                                neural-network based solution. In the end, we are trying to map out these constraints to
+                                animations in input-output pairs, which can be solved using a subset of machine learning known
+                                as “supervised learning”. This process of predicting a continuous outcome variables based on an
+                                input is known as “regression” (or “nearest neighbor regression” since we’re working with
+                                multiple mapped variables).
+                            </p>
+                            <img src="../../img/blog/animation/7.png" alt="ML 1">
+                            <p style="font-style: italic;">
+                                Mapping tag constraints to animation poses using nearest neighbor regression, Ubisoft GDC
+                                presentation
+                                <a href="https://www.youtube.com/watch?v=o-QLSjSSyVk&t=12s">[SOURCE]</a>
+                            </p>
+        
+                            <h2 style="color:white;">Neural Network Based Solution</h2>
+                            <p>
+                                This system as is works reasonably well for developing somewhat seamless poses. Given a large
+                                animation database and some blending between animation transitions, we get decent results with
+                                reasonable time and memory complexity (~1 ms and ~200 mb in Ubisoft’s case). However, final
+                                poses tend to have a strange “jitteriness” in transition in addition to occasional jarring
+                                poses. For many projects, bringing it to this step may be considered good enough. However,
+                                applying the neural-net based solution to our regression could yield more aesthetically pleasing
+                                results.
+                            </p>
+                            <p>
+                                Unfortunately, neural-networks aren’t a simple “plug-and-play solution”. Final poses will rely
+                                heavily based on the representation of inputs and outputs, and how the system actually decides
+                                to output interpolated poses. For example, if the player were to step forward from an idle pose,
+                                a system will need to decide whether to step with the left or right foot first, but a naïve
+                                implementation may end up choosing to step with a blend of both, resulting in even more jarring
+                                locomotion than our previous solution. Because of this, we’ll need a way to solve this ambiguity
+                                in our system using a system of “bins” and “phases”.
+                            </p>
+                            <p>
+                                A phase can be defined as some sort of slice in a cycle of animation locomotion. For example, a
+                                step with the left foot can represent 0, a step with a right foot can represent pi, and
+                                returning to the left foot can represent 2*pi. Along these phases, several animation poses can
+                                be placed into discrete “bins”, which contain several viable candidates for a pose at any given
+                                moment.
+                            </p>
+                            <img src="../../img/blog/animation/8.png" alt="NN 1">
+                            <p style="font-style: italic;">
+                                Phase and bin system for animation neural network, Ubisoft GDC presentation
+                                <a href="https://www.youtube.com/watch?v=o-QLSjSSyVk&t=12s">[SOURCE]</a>
+                            </p>
+                            <img src="../../img/blog/animation/9.png" alt="NN 2">
+                            <p style="font-style: italic;">
+                                Neural network representation, using phase value to cycle through weight value at runtime,
+                                Ubisoft GDC presentation
+                                <a href="https://www.youtube.com/watch?v=o-QLSjSSyVk&t=12s">[SOURCE]</a>
+                            </p>
+                            <p>
+                                Once this setup is complete, the system only needs two things: training and human judgement. The
+                                system can now train on random gameplay and simulated input constraints, which in turn develops
+                                key pathways for selecting animation poses. Once a large set of data is trained, humans (likely
+                                artists and designers) will need to review the generated locomotion, and decide on how neural
+                                network variables should be shifted to yield aesthetically pleasing results.
+                            </p>
+                            <img src="../../img/blog/animation/10.png" alt="NN 3">
+                            <p style="font-style: italic;">
+                                An agent cycling through randomly generated player inputs and gameplay circumstances in order to
+                                develop its neural network, Ubisoft GDC presentation
+                                <a href="https://www.youtube.com/watch?v=o-QLSjSSyVk&t=12s">[SOURCE]</a>
+                            </p>
+                            <p>
+                                The final results are fairly staggering. In Ubisoft’s results, they can bake an animation state
+                                machine with either (1 ms / 10 mb) or (0.5ms / 100 mb) response times and memory usage
+                                respectively. In addition, the results tend to almost always be more aesthetically pleasing than
+                                the previous non-neural-net, regression-based solution as this also accounts for human
+                                judgement.
+                            </p>
+        
+                            <h2 style="color:white;">Conclusion</h2>
+                            <p>
+                                In conclusion, machine learning-driven animation development has the potential to revolutionize
+                                how animation state machines are developed. More specifically, it proves itself to be an
+                                extremely valuable asset in large AAA video games, where traditional animation state machines
+                                can grow exponentially in complexity. While it does require developers to learn while new skill
+                                sets and give up, to some degree, precise control of animation states, it allows developers to
+                                save time in animation development which, in turn, allows them to work on other important
+                                aspects of development.
+                            </p>
+        
+                            <h2 style="color:white;">References</h2>
+                            <p style="font-style: italic;">
+                                Unity's Animation State Machine Documentation
+                                <a href="https://docs.unity3d.com/Manual/StateMachineBasics.html">[LINK]</a>
+                            </p>
+                            <p style="font-style: italic;">
+                                "Character Control with Neural Networks and Machine Learning", a GDC Presentation by Ubisoft's
+                                Daniel Holden
+                                <a href="https://www.youtube.com/watch?v=o-QLSjSSyVk&t=12s">[LINK]</a>
+                            </p>
+                            <p style="font-style: italic;">
+                                "Neural Network Can Animate Characters In Game Environment", Neurohive's FSM Implementation
+                                Details
+                                <a
+                                    href="https://neurohive.io/en/news/neural-network-can-animate-characters-in-game-environment/">[LINK]</a>
+                            </p>
+                            <p style="font-style: italic;">
+                                "Regression Analysis Essentials For Machine Learning", STHDA Explanation of Regression Analysis
+                                <a
+                                    href="http://www.sthda.com/english/wiki/regression-analysis-essentials-for-machine-learning#:~:text=Regression%20analysis%20consists%20of%20a,function%20of%20the%20x%20variables">[LINK]</a>
+                            </p>
+                            <p style="font-style: italic;">
+                                "Neural Networks Bias And Weights", Medium's Explanation of Neural Network Bias and Weight
+                                Functions
+                                <a
+                                    href="https://medium.com/fintechexplained/neural-networks-bias-and-weights-10b53e6285da">[LINK]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+    <!-- Footer Section Begin -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-option">
+                        <div class="fo-logo">
+                            <a href="../../index.html">
+                                <img src="../../img/logo.png" alt="">
+                            </a>
+                            <p></p>
+                            <p>
+                                Like what you see? Feel free to reach out with networking, consulting, or employment
+                                opportunities!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-option">
+                        <div class="footer-widget fw-links">
+                            <h5>Contact</h5>
+                        </div>
+                        <ul>
+                            <li><b>Phone:</b> 2 oh 8, 5 five 0, nine 1 9 one</li>
+                            <li><b>Email:</b> juanbecerra (at) u (dot) boisestate (dot) edu</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-option">
+                        <div class="fo-social">
+                            <div class="footer-widget fw-links">
+                                <h5>Social</h5>
+                            </div>
+
+                            <a href="https://www.github.com/juanbecerra0" target="_blank"><i
+                                    class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/hoowan" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://www.twitter.com/NumeroHoowan" target="_blank"><i
+                                    class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/numerohoowan/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/thatguyjuan/" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget fw-links">
+                        <h5>Navigation</h5>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../about.html">About Me</a></li>
+                            <li><a href="../../resume.html">Resume</a></li>
+                            <li><a href="../../portfolio.html">Portfolio</a></li>
+                            <li><a href="../../blog.html">Blog</a></li>
+                            <li><a href="../../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
+                    made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                        target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.magnific-popup.min.js"></script>
+    <script src="../../js/mixitup.min.js"></script>
+    <script src="../../js/jquery.slicknav.js"></script>
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>
